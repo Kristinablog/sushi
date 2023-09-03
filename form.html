@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>First form</title>
+    <style>
+        .form-row {
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+
+<!-- Создайте страницу для заказа суши.
+Для заказа нужно указать такую информацию:
+■ Имя;
+■ Адрес;
+■ Телефон;
+■ Email;
+■ Количество палочек;
+■ Вид палочек;
+■ Обычные;
+■ Учебные;
+■ Список для выбора суши;
+■ Нужно ли класть салфетки?
+■ Дополнительный комментарий. -->
+
+
+
+<body>
+    <h2>Регистрация</h2>
+    <form action="search.html" method="get">
+        <div class="form-row">
+            <label for="name">Ваше имя:</label>
+            <input type="text"  required id="name" autocomplete="off" placeholder="Ваше имя" name="username">
+        </div>
+          <div class="form-row">
+            <label for="adress">Адрес</label>
+            <input type="text"  required id="adress" autocomplete="off" placeholder="Адрес" name="adress">
+        </div>
+        <div class="form-row">
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="email" name="email" />
+        </div>
+              <div class="form-row">
+            <label for="count-palka">Количество палочек:</label>
+            <input type="number" id="count-palka" name="countp" max="10" min="1" />
+        </div>
+       
+        </div>
+
+
+        <div class="form-row">
+            <label for="palka">Вид палочек:</label>
+            <select id="norm" name="обычные">
+                <option value="norm"> Обычные</option>
+                <option value="norm"> Учебные</option>
+                </select>
+        </div>
+        <div class="form-row">
+            <label for="nameOfPizza">Список для выбора суши:</label>
+            <select id="nameOfPizza" name="nameOfPizza">
+                <option value="" selected>Не выбрана</option>
+                <option value="Kolifornia">Kolifornia</option>
+                <option value="Filo" >Filo</option>
+               
+            </select>
+        </div>
+
+        <div class="form-row">
+            <textarea id="message" placeholder="О себе" name="userMessage"></textarea>
+        </div>
+
+        <div class="form-row">
+            <p> Нужно ли класть салфетки:</p>
+            <input type="radio" value="male" id="gender1" name="sex" />
+            <label for="gender1" class="male">Да</label>
+            <input type="radio" value="female" id="gender2" name="sex" />
+            <label for="gender2">Нет</label>
+        </div>
+        <fieldset>
+            <div class="form-row">
+                <textarea id="message" placeholder="Коментарии" name="userMessage"></textarea>
+            </div>
+        </div>
+        
+
+
+        <div class="form-row">
+            <input type="submit" value="Отпрвить" />
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
